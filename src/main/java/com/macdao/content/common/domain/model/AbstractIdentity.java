@@ -8,7 +8,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @EqualsAndHashCode
 @Getter
-public class AbstractIdentity implements Identity {
+public abstract class AbstractIdentity implements Identity {
     @JsonValue
     private final String value;
 
