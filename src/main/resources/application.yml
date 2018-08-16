@@ -1,4 +1,4 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost/ecommerce_order
+    url: jdbc:mysql://localhost/content
     username: root

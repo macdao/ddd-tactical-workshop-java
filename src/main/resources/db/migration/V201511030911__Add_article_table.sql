@@ -1,4 +1,4 @@
-CREATE TABLE ecommerce_order (
+CREATE TABLE article (
   id VARCHAR(50) NOT NULL,
   PRIMARY KEY (id)
 );

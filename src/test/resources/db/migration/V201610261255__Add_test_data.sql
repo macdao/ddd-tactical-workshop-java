@@ -1,1 +1,1 @@
-insert into ecommerce_order (id) value ('order-id-1');
+insert into article (id) value ('article-id-1');

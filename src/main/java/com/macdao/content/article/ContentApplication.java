@@ -1,12 +1,12 @@
-package com.macdao.ecommerce.context.order;
+package com.macdao.content.article;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OrderApplication {
+public class ContentApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OrderApplication.class, args);
+		SpringApplication.run(ContentApplication.class, args);
 	}
 }
