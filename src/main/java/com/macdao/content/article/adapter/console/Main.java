@@ -10,9 +10,7 @@ public class Main {
     public static void main(String[] args) {
         final ArticleApplicationService articleApplicationService = new ArticleApplicationService(new MapArticleRepository());
 
-        final Article article = new Article();
-        article.setTitle("An article title");
-        article.setContent("An article content");
+        final Article article = new Article("An article title", "An article content");
         articleApplicationService.createArticle(article);
 
         articleApplicationService.publish(article.getId());
