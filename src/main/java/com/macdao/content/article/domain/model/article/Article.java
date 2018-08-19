@@ -4,7 +4,6 @@ import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @Getter
 public class Article {
@@ -15,17 +14,18 @@ public class Article {
         DELETED
     }
 
-    public Article(String title, String content) {
-        id = new ArticleId(UUID.randomUUID().toString());
+    public Article(String title, String content, List<Product> products) {
+        id = new ArticleId();
         status = ArticleStatus.DRAFT;
         this.title = title;
         this.content = content;
+        this.products = new ArrayList<>(products);
     }
 
     private final ArticleId id;
     private String title;
     private String content;
-    private final List<Product> products = new ArrayList<>();
+    private final List<Product> products;
     private ArticleStatus status;
 
     public void publish() {

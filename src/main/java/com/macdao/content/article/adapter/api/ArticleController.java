@@ -19,8 +19,8 @@ public class ArticleController {
     }
 
     @GetMapping("/{articleId}")
-    public ResponseEntity<Article> getArticle(@PathVariable ArticleId articleId) {
-        return articleApplicationService.getArticle(articleId)
+    public ResponseEntity<Article> getArticle(@PathVariable String articleId) {
+        return articleApplicationService.getArticle(new ArticleId(articleId))
             .map(ResponseEntity::ok)
             .orElseGet(() -> ResponseEntity.notFound().build());
     }

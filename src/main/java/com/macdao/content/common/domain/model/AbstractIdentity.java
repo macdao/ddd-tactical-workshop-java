@@ -1,6 +1,5 @@
 package com.macdao.content.common.domain.model;
 
-import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -9,7 +8,6 @@ import lombok.RequiredArgsConstructor;
 @EqualsAndHashCode
 @Getter
 public abstract class AbstractIdentity implements Identity {
-    @JsonValue
     private final String value;
 
     @Override
